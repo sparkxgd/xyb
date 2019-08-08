@@ -1,0 +1,82 @@
+<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{swiperList}}" wx:key>
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+  </swiper>
+
+  <view class="cu-list grid col-{{gridCol}} no-border">
+      <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol}}" >
+        <view class="cuIcon-{{item.icon}} text-{{item.color}}" bindtap="openptj" data-pagetype="{{item.type}}">
+          <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
+            <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block>
+          </view>
+        </view>
+        <text>{{item.name}}</text>
+      </view>
+  </view>
+
+<!-- 通知消息start -->
+  <!-- 滚动部分 -->
+  <view class='gundong-section solid-top margin-bottom-xs'>
+    <image src="../../../../images/round-g.gif"></image>
+    <view class="swiperview swiper-position">
+      <swiper class="swiperitem" indicator-dots="false" autoplay="{{autoplay}}" vertical="true" circular="true">
+        <block wx:for="{{rollData}}" wx:key>
+          <swiper-item>
+            <text class="swiper-txt">{{item}}</text>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+
+
+<!-- 这是个卡片 start-->
+<view class="cu-card article shadow-blur no-card solid-bottom radius" wx:for='{{5}}' wx:key>
+  <view class="cu-item">
+    <view class="flex justify-between title">
+        <view>
+          <view class="cu-tag bg-red light">兼职</view>
+          <text class="text-blue"> 中小学数学辅导</text>
+        </view>
+        <text class="text-price text-red">1500/月</text>      
+    </view>
+    
+    <view class="content">        
+      
+      <view class="text-cut">
+          辅导班招一名兼职辅导老师，男女不限。主要辅导小学生完成作业，每个星期只上星期一到星期三下午5:00到晚8:30，包晚餐。辅导班学生很听话，很好带，上班很轻松。要求:有耐心，有责任心，有工作经验者优先！ </view>
+  
+    </view>
+         
+    <view class="content">    
+  
+      <view class="desc">       
+       
+         
+          <view class='flex'>
+            <view class="cu-tag bg-red light sm round">数学</view>
+            <view class="cu-tag bg-green light sm round">包晚餐</view>
+            <view class="cu-tag bg-mauve light sm round">小学生</view>
+           
+          </view>
+<text class="cuIcon-locationfill sm text-orange">凯里开发区公园一号二期3栋2单元</text>
+          <view class="margin-top-sm flex justify-between solid-top">
+            <view class="text-df">
+              <view class="cu-avatar sm round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+              肖邦
+              <text class='cuIcon-edit text-pink'>6月13日08:12</text>
+              </view>            
+              <view>
+                  <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+                  <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+              </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<!-- 这是个卡片 end-->

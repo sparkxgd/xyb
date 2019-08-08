@@ -1,0 +1,114 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">兼职详细信息</view>
+</cu-custom>
+
+<view class="cu-card case no-card">
+  <view class="cu-item shadow">
+    <!-- 标题 -->
+    <view class="cf padding-sm myborder">
+      <view class="fl">
+        <view><text class="text-bold text-black text-xxl">小学生数学辅导</text></view>
+        <view class='text-green'>推荐指数
+          <text class='cuIcon-favorfill'></text>
+          <text class='cuIcon-favorfill'></text>
+          <text class='cuIcon-favorfill'></text>
+          <text class='cuIcon-favor'></text>
+          <text class='cuIcon-favor'></text>
+        </view>
+      </view>
+      <view class="fr padding-sm">
+        <view class='solid-bottom '><text class='cuIcon-time text-blue text-center'> 4分钟前</text> </view>
+        <view><text class='cuIcon-attention text-red'> 1.2万+</text></view>
+      </view>
+    </view>
+    <!-- 工资，招聘人数 -->
+    <view class="bg-white">
+      <view class="bg-white text-xl padding-sm">
+        <text class="text-price text-red padding-sm">8000-9000/月</text>
+      </view>
+      <view class='padding-sm myborder'>
+        <text class='cuIcon-friend text-blue text-center padding-sm'> 招 3人</text>
+        <view class="cu-tag bg-pink light"><text class='cuIcon-friend text-center'> 女生</text></view>
+        <view class="cu-tag bg-blue light"><text class='cuIcon-friend text-center'> 数学</text></view>
+        <view class="cu-tag bg-orange light"><text class='cuIcon-friend text-center'> 漂亮</text></view>
+        <view class="cu-tag bg-cyan light"><text class='cuIcon-friend text-center'> 普通话</text></view>
+      
+      </view>
+
+      <view class="cu-list menu myborder">
+        <view class="cu-item arrow">
+          <view class="content">
+            <text class="cuIcon-locationfill text-orange"></text>
+            <text class="text-black">凯里开发区公园一号二期3栋2单元</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="cu-item shadow myborder">
+      <view class="text-content padding-sm text-black">
+        <view class='text-xl text-orange'>工作详情</view>
+        <view class="text-left">我于杀戮之中绽放 ,亦如黎明中的花朵
+        1、小学6年级语数外都能教的女生，暑假期间，本人妹妹各方面跳舞唱歌这些特长都行
+        2、但是就是学习态度不端正，学习不积极，需要一个人带动她学习，尽量传导些正能量的东西。
+        3、工资面议，可包吃住，符合条件者请私聊，非诚勿扰，联系人：15121405881
+        3、工资面议，可包吃住，符合条件者请私聊，非诚勿扰，联系人：15121405881
+        3、工资面议，可包吃住，符合条件者请私聊，非诚勿扰，联系人：15121405881
+        3、工资面议，可包吃住，符合条件者请私聊，非诚勿扰，联系人：15121405881
+       
+        </view>
+      </view>
+    </view>
+
+    <view class="text-content padding-sm">
+    <view class='text-xl text-orange'>职位发布者</view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+        <view class="content flex-sub text-black">
+          <view>
+            <text class='padding-sm'>肖邦 </text>
+            <text class='padding-sm'>学生主席</text>
+            <text class='cuIcon-likefill text-red'></text>
+            <text class='cuIcon-likefill text-red'></text>
+            <text class='cuIcon-likefill text-red'></text>
+            <text class='cuIcon-like'></text>
+            <text class='cuIcon-like'></text>
+          </view>
+          <view class="text-sm flex text-black">
+            <text class='cuIcon-newfill text-green'> </text> 最近活跃：1天前
+          </view>
+        </view>
+      </view>
+    </view>
+    </view>
+
+    <view class="flex margin-bottom-sm">
+      <view class="basis-xs  padding-xs margin-xs text-xsl text-red">
+        <text class='cuIcon-warn'></text>
+      </view>
+      <view class="basis-xl padding-sm margin-xs text-yellow">
+      温馨提示，小心上当受骗！温馨提示，小心上当受骗！温馨提示，小心上当受骗！温馨提示，小心上当受骗！
+      </view>
+    </view>
+
+<view class="cu-bar tabbar bg-white shadow">
+    <view class="action">
+      <view class="cuIcon-share text-green">
+      </view>
+      <view class="text-green">分享</view>
+    </view>
+    <view class="action text-orange">
+      <view class="cuIcon-favorfill"></view> 已收藏
+    </view>
+    <view class="bg-red submit">立即投递</view>
+</view>
+
+
+  </view>
+</view>
+
+
+

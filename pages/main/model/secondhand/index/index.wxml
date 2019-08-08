@@ -1,0 +1,90 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">二手市场</view>
+</cu-custom>
+
+
+<!-- 搜索start -->
+<view>
+  <view class="cu-bar bg-white search">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-gradual-green shadow-blur round">搜索</button>
+    </view>
+  </view>
+</view>
+<!-- 商品列表 -->
+<view class="flex">
+  <view class="flex-sub radius"> 
+
+  <view class="cu-card case no-card solid-bottom" wx:for="{{5}}" wx:key>
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="http://pic2.iqiyipic.com/common/20190624/f003512aaf4f4094b48bbfa2e8fa04a3.jpg" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">7成新</view>
+    </view>
+    <view class="content padding-sm">
+      <text class='mytext-cut'>我已天理为凭，踏入这片荒芜，不再受凡人的枷锁,不再受凡人的枷锁不再受凡人的枷锁</text>
+    </view>
+     <view class="content padding-sm flex justify-between sold">
+      <text class="text-price text-red margin-lr-xs">30</text> 
+      <view class="cu-tag bg-red light sm">手机</view>
+      <view class="cu-tag bg-green light sm">大数据</view>
+    </view>
+
+    <view class="flex p-xs margin-bottom-sm mb-sm">
+      <view class="flex-sub">
+          <view class="cu-avatar sm round margin-left" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      </view>
+      <view class="flex-twice">
+          <view class="grid col-1 text-left">
+              <view class="text-xs">肖邦  厉害java人</view>
+              <view class="text-xs">100米内|35分钟前</view>
+          </view>
+
+      </view>
+    </view>
+  </view>
+  </view>
+  </view>
+
+
+<!-- 2lie -->
+  <view class="flex-sub radius"> 
+
+  <view class="cu-card case no-card" wx:for="{{4}}" wx:key>
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="http://pic2.iqiyipic.com/common/20190624/f003512aaf4f4094b48bbfa2e8fa04a3.jpg" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">9成新</view>
+    </view>
+    <view class="content padding-sm">
+       <text class='mytext-cut'>我已天理为凭，踏入这片荒芜，不再受凡人的枷锁,不再受凡人的枷锁不再受凡人的枷锁</text>
+    </view>
+     <view class="content padding-sm flex justify-between sold">
+      <text class="text-price text-red margin-lr-xs">30</text> 
+      <view class="cu-tag bg-red light sm">小学生</view>
+      <view class="cu-tag bg-green light sm">小学生</view>
+    </view>
+
+    <view class="flex p-xs margin-bottom-sm mb-sm">
+      <view class="flex-sub">
+          <view class="cu-avatar sm round margin-left" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      </view>
+      <view class="flex-twice">
+          <view class="grid col-1 text-left">
+              <view class="text-xs">肖邦  厉害java人</view>
+              <view class="text-xs">最近活跃|35分钟前</view>
+          </view>
+
+      </view>
+    </view>
+  </view>
+  </view>
+  </view>
+
+</view>
+

@@ -1,0 +1,6 @@
+{
+   "usingComponents": {
+        "parttimejobmsg": "../../pages/main/model/parttimejob/addmsg/addmsg",
+        "activitymsg": "../../pages/main/model/activity/addmsg/addmsg"
+    }
+}

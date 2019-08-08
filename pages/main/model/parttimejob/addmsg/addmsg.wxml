@@ -1,0 +1,150 @@
+<form>
+	<view class="cu-form-group margin-top">
+		<view class="title">标题</view>
+		<input></input>
+	</view>
+
+	<view class="cu-form-group" bindtap="showModal" data-target="DialogModal1">
+		<view class="title">薪资</view>
+    <view class="text-red" style="float:right">	
+      <text class="text-price"></text>
+      <text>{{salaryValue}} / {{salaryDanwei}}</text>      
+    </view>
+	  <text class="cuIcon-right"></text>
+	</view>
+
+
+	<view class="cu-form-group" bindtap="openmap">
+		<view class="title">工作地址</view>
+		<input value='{{latitude}}'>
+    </input>
+		<text class="cuIcon-locationfill text-orange"></text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">招聘人数</view>
+     <input bindinput='salaryValue' type='number' style="text-align:right"></input>人
+		   
+	</view>
+
+	<view class="cu-form-group" bindtap="showModal" data-target="DialogModal2">
+		<view class="title">职位标签</view>
+		 <view class="action" wx:for="{{tags}}" wx:key >
+      <view wx:if='{{item.checked}}'>
+       <view class="cu-tag bg-{{item.cor}} light">{{item.value}}</view>
+       </view>
+    </view>    
+    <text class="cuIcon-right"></text>
+	</view>
+
+  <text class='padding-sm text-red'>职位详细描述</text>
+	<view class="cu-form-group">
+		<textarea maxlength="-1" show-confirm-bar='false'> </textarea>
+	</view>
+
+
+
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+请不要发布不良信息！！
+
+请不要发布不良信息！！请不要发布不良信息！！
+请不要发布不良信息！！
+
+
+  <view class="padding-xl">
+    <button class="cu-btn block bg-blue lg">
+        <text class="cuIcon-roundcheckfill text-sl text-green"></text> 保存
+    </button>
+	</view>
+
+
+</form>
+
+
+<!-- 薪资对话框 -->
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">薪资信息</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">  
+
+<view class="flex solid-bottom padding justify-start">
+    
+      <view class="bg-red padding-sm margin-xs radius">
+        薪资：  
+      </view>
+      <view class="bg-grey padding-sm margin-xs radius">
+        <input bindinput='salaryValue' type='number'></input> 
+      </view>
+  </view>
+
+  <view class="flex solid-bottom padding justify-start">
+    
+      <view class="bg-green padding-sm margin-xs radius">
+        单位：  
+      </view>
+      <view class="bg-grey padding-sm margin-xs radius">
+      <picker bindchange="salaryDanwei" range="{{danwei}}">   
+          <view class="picker">
+          {{salaryDanwei}}
+          </view>
+        </picker>
+      </view> 
+  </view>
+ 
+ 
+       
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!-- 职位要求对话框 -->
+<view class="cu-modal {{modalName=='DialogModal2'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">选择职位标签</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">  
+
+           
+
+<view class="padding-sm flex flex-wrap">
+  <view class="padding-xs checkbox {{item.checked?'checkedActive':''}}" data-id="{{index}}" wx:for="{{items}}" wx:key bindtap='userCheck'>
+    {{item.value}}
+  </view>
+</view>
+
+
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+      </view>
+    </view>
+  </view>
+</view>

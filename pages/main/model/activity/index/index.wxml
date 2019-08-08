@@ -1,0 +1,63 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">活动信息</view>
+</cu-custom>
+
+<scroll-view scroll-x class="bg-gradual-pink nav text-center">
+  <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="0">
+    <text class="cuIcon-camerafill"></text> 全部
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="1">
+    <text class="cuIcon-upstagefill"></text> 公益
+  </view>
+  <view class="cu-item {{2==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="2">
+    <text class="cuIcon-clothesfill"></text> 讲座
+  </view>
+    <view class="cu-item {{3==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="3">
+    <text class="cuIcon-clothesfill"></text> 优惠
+  </view>
+  <view class="cu-item {{3==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="3">
+    <text class="cuIcon-clothesfill"></text> 校园其他
+  </view>
+    
+</scroll-view>
+
+<!-- 搜索start -->
+<view class='margin-bottom-xs'>
+  <view class="cu-bar bg-white search">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-gradual-green shadow-blur round">搜索</button>
+    </view>
+  </view>
+</view>
+
+
+<view class="cu-card article" wx:for='{{5}}' wx:key> 
+  <view class="cu-item shadow  padding-top">
+     <view class="content">
+      <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="aspectFill"></image>
+      <view class="desc">
+      <view class="text-title"> 折磨生出苦难 </view>
+        <view>
+          <view class="cu-tag bg-red light sm">2018年12月4日</view>
+         
+        </view>
+        <view>
+         <view class="cu-tag bg-green light sm">凯里学院3栋23101</view>
+         </view>
+         <view class="margin-top-sm flex justify-between">
+          <view><text class="cuIcon-attentionfill text-gray margin-left-sm"></text>1999</view>           
+            <view>
+              <text class="cuIcon-appreciate text-gray"></text>已报名：30/100
+              
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>
+

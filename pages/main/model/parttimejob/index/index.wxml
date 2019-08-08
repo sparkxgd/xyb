@@ -1,0 +1,107 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">兼职信息</view>
+</cu-custom>
+
+<scroll-view scroll-x class="bg-gradual-pink nav text-center">
+  <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="0">
+    <text class="cuIcon-camerafill"></text> 全部
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="1">
+    <text class="cuIcon-upstagefill"></text> 家教
+  </view>
+  <view class="cu-item {{2==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="2">
+    <text class="cuIcon-clothesfill"></text> 辅导班
+  </view>
+    <view class="cu-item {{3==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="3">
+    <text class="cuIcon-clothesfill"></text> 发传单
+  </view>
+    <view class="cu-item {{4==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="4">
+    <text class="cuIcon-clothesfill"></text> 促销员
+  </view>
+  <view class="cu-item {{5==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-type="5">
+    <text class="cuIcon-clothesfill"></text> 代课\代考
+  </view>
+    
+</scroll-view>
+
+<!-- 搜索start -->
+<view>
+  <view class="cu-bar bg-white search">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-gradual-green shadow-blur round">搜索</button>
+    </view>
+  </view>
+</view>
+
+
+<!-- 这是个卡片 start-->
+<view class="cu-card article no-card margin-top" wx:for='{{5}}' wx:key>
+  <view class="cu-item">
+    <view class="solid-bottom flex justify-between title"  bindtap="openptjdetail">
+        <view>
+          <view class="cu-tag bg-red light">兼职</view>
+          <text class="text-blue"> 中小学数学辅导</text>
+        </view>
+        <text class="text-price text-red">1500/月</text>      
+    </view>
+    
+    <view class="content">        
+      
+      <view class="text-cut">
+          辅导班招一名兼职辅导老师，男女不限。主要辅导小学生完成作业，每个星期只上星期一到星期三下午5:00到晚8:30，包晚餐。辅导班学生很听话，很好带，上班很轻松。要求:有耐心，有责任心，有工作经验者优先！ </view>
+  
+    </view>
+         
+    <view class="content">    
+  
+      <view class="desc">       
+       <text class="cuIcon-locationfill sm text-orange">凯里开发区公园一号二期3栋2单元</text>
+         
+          <view class='flex'>
+            <view class="cu-tag bg-red light sm round">数学</view>
+            <view class="cu-tag bg-green light sm round">包晚餐</view>
+            <view class="cu-tag bg-mauve light sm round">小学生</view>
+           
+          </view>
+
+          <view class="margin-top-sm flex justify-between solid-top">
+            <view class="text-df">
+              <view class="cu-avatar sm round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+              肖邦
+              <text class='cuIcon-edit text-pink'>6月13日08:12</text>
+              </view>            
+              <view>
+                  <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+                  <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+              </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<!-- 这是个卡片 end-->
+
+
+<view class="cu-bar tabbar bg-white shadow foot">
+    <view class="action">
+      <view class="cuIcon-homefill">
+      </view>
+      <view class="text-green">主页</view>
+    </view>
+    <view class="action text-black add-action">
+      <button class="cu-btn cuIcon-add bg-green shadow"></button>
+      发布
+    </view>
+    <view class="action">
+      <view class="cuIcon-myfill">
+        <view class="cu-tag badge">10</view>
+      </view>
+      <view class="text-black">我的</view>
+    </view>
+</view>

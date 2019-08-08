@@ -1,0 +1,14 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">兼职信息发布</view>
+</cu-custom>
+	<view class="cu-form-group margin-top">
+		<view class="title">发布消息类型</view>
+		<picker bindchange="pickerChange"  range="{{pickers}}" range-key="name">
+			<view class="picker text-green">
+				{{pickers[index].name}}
+			</view>
+		</picker>
+	</view>
+<parttimejobmsg wx:if="{{PageCur=='1'}}"></parttimejobmsg>
+<activitymsg wx:if="{{PageCur=='3'}}"></activitymsg>

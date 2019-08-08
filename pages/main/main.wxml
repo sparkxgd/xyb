@@ -1,0 +1,24 @@
+<indexpage wx:if="{{PageCur=='0'}}" bind:openpage="openpage"></indexpage>
+<parttimejob wx:if="{{PageCur=='1'}}"></parttimejob>
+<activity wx:if="{{PageCur=='3'}}"></activity>
+<myhelp wx:if="{{PageCur=='5'}}"></myhelp>
+<news wx:if="{{PageCur=='6'}}"></news>
+<secondhand wx:if="{{PageCur=='4'}}"></secondhand>
+
+<view class="cu-bar tabbar bg-white shadow foot">
+    <view class="action" bindtap='footaction' data-page='index'>
+      <view class="cuIcon-homefill">
+      </view>
+      <view class="text-green">主页</view>
+    </view>
+    <view class="action text-black add-action" bindtap='footaction' data-page='addmsg'>
+      <button class="cu-btn cuIcon-add bg-green shadow"></button>
+      发布
+    </view>
+    <view class="action" bindtap='footaction' data-page='homepage'> 
+      <view class="cuIcon-myfill">
+        <view class="cu-tag badge">10</view>
+      </view>
+      <view class="text-black">我的</view>
+    </view>
+</view>

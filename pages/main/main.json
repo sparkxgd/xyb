@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "activity": "../../pages/main/model/activity/index/index",
+    "parttimejob": "../../pages/main/model/parttimejob/index/index",
+    "indexpage": "../../pages/main/model/index/index",
+    "myhelp": "../../pages/main/model/myhelp/index/index",
+    "secondhand": "../../pages/main/model/secondhand/index/index",
+    "news": "../../pages/main/model/news/index/index"
+  }
+}
